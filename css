@@ -1,0 +1,306 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #edf0f0;
+    color: #171717;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-container {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 850px;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.login-form {
+    flex: 1;
+    padding: 65px 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #003f40;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 125px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    background: #003f40;
+    color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+.welcome {
+    margin-bottom: 48px;
+}
+
+.welcome h1 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.welcome p {
+    color: #777777;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border: 1px solid #e0e0e0;
+    border-radius: 14px;
+    padding: 0 20px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-box:focus-within,
+.input-box.active {
+    border: 2px solid #4b8583;
+    box-shadow: 0 0 0 2px rgba(0, 77, 77, 0.05);
+}
+
+.input-icon {
+    color: #647777;
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #222222;
+}
+
+.input-box input::placeholder {
+    color: #888888;
+}
+
+.toggle-password {
+    border: none;
+    background: transparent;
+    color: #777777;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.forgot {
+    text-align: right;
+    margin-top: -12px;
+    margin-bottom: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: #005052;
+}
+
+.forgot a {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sign-in {
+    width: 100%;
+    height: 72px;
+    background: #004344;
+    color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sign-in:hover {
+    background: #00605f;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 35px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #eeeeee;
+}
+
+.divider p {
+    color: #777777;
+    font-size: 15px;
+}
+
+.social-button {
+    width: 100%;
+    height: 68px;
+    background: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 13px;
+    margin-bottom: 22px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    transition: background 0.3s;
+}
+
+.social-button:hover {
+    background: #f7fafa;
+}
+
+.google-icon {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4285f4;
+}
+
+.apple-icon {
+    font-size: 22px;
+    color: #000000;
+}
+
+.signup {
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+    margin-top: 18px;
+}
+
+.signup a {
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.right-panel {
+    width: 100px;
+    background: #004344;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.quote {
+    width: 240px;
+    padding: 20px;
+    text-align: center;
+}
+
+.quote-mark {
+    font-size: 60px;
+}
+
+.quote p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        align-items: flex-start;
+        background: #ffffff;
+    }
+
+    .login-container {
+        min-height: 100vh;
+        box-shadow: none;
+    }
+
+    .login-form {
+        padding: 35px 24px;
+    }
+
+    .logo {
+        margin-bottom: 75px;
+        font-size: 24px;
+    }
+
+    .logo-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .welcome {
+        margin-bottom: 35px;
+    }
+
+    .welcome h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .welcome p {
+        font-size: 15px;
+    }
+
+    .input-box {
+        height: 58px;
+    }
+
+    .sign-in {
+        height: 60px;
+    }
+
+    .social-button {
+        height: 58px;
+        font-size: 15px;
+    }
+
+    .right-panel {
+        display: none;
+    }
+}
